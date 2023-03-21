@@ -1,4 +1,18 @@
 # MicroServicios Taller
+Instrucciones punto 1:
+1.Correr el programa 
+2. Con postman o el navegador probar los Uris:
+
+http://localhost:8080/api/paseo(listar)
+http://localhost:8080/api/paseo/actualizarPaseo/4?origen=Suiza&destino=Colombia(actualizar)
+http://localhost:8080/api/paseo/createPaseo(crear). El Json para crear es:
+{
+  "id": 0,
+  "origen": "",
+  "destino": ""
+
+}
+http://localhost:8080/api/paseo/deletepaseo/4(borrar)
 
 Instrucciones punto 2:
 
