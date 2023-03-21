@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "e18efe0f-314a-472e-940a-9ad21e279fac",
+		"name": "MicroServicios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21280109"
+	},
+	"item": [
+		{
+			"name": "listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/paseo/createPaseo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"paseo",
+						"createPaseo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/paseo/actualizarPaseo/2?origen=Medellin&destino=Bogota",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"paseo",
+						"actualizarPaseo",
+						"2"
+					],
+					"query": [
+						{
+							"key": "origen",
+							"value": "Medellin"
+						},
+						{
+							"key": "destino",
+							"value": "Bogota"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"origen\": \"Bogota\",\r\n  \"destino\": \"Cali\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/paseo/createPaseo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"paseo",
+						"createPaseo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/paseo/deletepaseo/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"paseo",
+						"deletepaseo",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
